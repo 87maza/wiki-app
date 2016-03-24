@@ -12,7 +12,6 @@ html{
   position: relative;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-
   height: 100vh;
   margin: 0 auto; /*all our rows will be centered*/
 }
