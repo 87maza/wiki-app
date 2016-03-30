@@ -2,30 +2,39 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Martin Maza | WickedPedia App</title>
+    <title>Martin Maza | Wickedpedia App</title>
         <meta name="description" content="">
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic' rel='stylesheet' type='text/css'>
         <link rel="icon" type="image/png" sizes="16x16" href="img/android-icon-192x192.png"> 
+        <link rel="stylesheet" href="css/ionicons.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">  
   </head>
   <body>
-    <h1><span>Wicked</span>Pedia</h1>
-    <form>
-      Search Wiki:
-      <input type="search" name="wikisearch" id="searchText">
-      <input type="submit" value="Submit" id="submit">
-    </form>
+    <div class="container">
+      <h1>Wicked<span>pedia</span></h1>
+        <div class="row">
+          <a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank"><div class="choice-box darker col-md-5">
+            <h2>Random Article</h2>
+            </div></a>
+        </div>
+        <div id="search-div">
+          <input type="text"  placeholder="Words and Stuff" id="searchText">
+          <!-- <button type="submit" ></button> -->
+          <i class="ion-search icon-medium" id="submit"></i>
+        </div>
+    <!-- http://i.4cdn.org/wsg/1458972124793.webm -->
+      <div id="results">
+        <div id="title"></div>
+        <div id="snippet"></div>
+      </div>
+    </div>
 
 
 
-
-
-
-
-    <footer>
       <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
       <script src="js/script.js"></script>
+    <footer>
     </footer>
-</body>
+  </body>
 </html>
